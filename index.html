@@ -1,0 +1,202 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAHJUL HUDA DARS</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0a8f9e, #dd9bd1);
+      color: white;
+      overflow-x: hidden;
+    }#welcome-popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  z-index: 9999;
+  animation: fadeIn 2s;
+}
+
+header {
+  text-align: center;
+  text-shadow: black;
+  padding: 2rem 1rem;
+  animation: fadeInDown 2s ease-in-out;
+}
+
+.logo {
+  width: 100px;
+  border-radius: 100px;
+}
+
+.description {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  animation: zoomIn 2s ease-in-out;
+}
+
+.gallery-item {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.instagram-link {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.instagram-link svg {
+  width: 50px;
+  height: 50px;
+  fill: white;
+  transition: transform 0.5s ease, fill 0.5s ease;
+  animation: bounce 2s infinite;
+}
+
+.instagram-link svg:hover {
+  transform: scale(1.2);
+  fill: #fccc63;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.popup {
+  position: absolute;
+  pointer-events: none;
+  background: rgba(0,0,0,0.7);
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  transform: scale(0);
+  transition: transform 0.2s ease;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+  </style>
+</head>
+<body>
+  <div id="welcome-popup">WELCOME TO NAHJUL HUDA DARS</div>  <header>
+    <img src="470894940_1009344907667012_3220201858872715732_n.jpg" alt="Logo" class="logo">
+    <h1>NAHJUL HUDA DARS</h1>
+  </header>  <section class="description">
+    <h2>About Us</h2>
+    <p>
+      Nahjul Huda Dars is a dedicated Islamic organization focused on spreading the teachings of the Quran and Sunnah.
+      Our mission is to inspire hearts with wisdom, educate minds with knowledge, and build a community rooted in faith and unity.
+    </p>
+  </section>  <section class="gallery">
+    <div class="gallery-item">
+      <img src="471492595_618376020619337_1268800198924982292_n.jpeg.jpg" alt="Victory">
+      <p>We won second place in the range-level competition.</p>
+    </div>
+    <div class="gallery-item">
+      <img src="476923913_17854716177382780_582988975818071726_n.webp" alt="We has commetty">
+      <p>Our 2024-25 Committee Members</p>
+    </div>
+    <div class="gallery-item">
+      <img src="IMG_20250404_155330.JPG" alt="Published ramadan based book">
+      <p>We have released a book containing rules for Ramadan.</p>
+    </div>
+    <div class="gallery-item">
+      <img src="IMG_20250404_155400.JPG" alt="The gift was given">
+      <p>Winners of the competition held as part of the Prophet's Day program</p>
+    </div>
+  </section>  <div class="instagram-link">
+    <a href="https://www.instagram.com/nahjul_huda_dars_attur?igsh=YjV2ZDRlbTI1djV2this" target="_blank" aria-label="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 
+        114.9-51.3 114.9-114.9S287.6 141 224.1 141zm0 189.6c-41.2 0-74.7-33.5-74.7-74.7 
+        0-41.2 33.5-74.7 74.7-74.7 41.2 0 74.7 33.5 74.7 74.7 0 41.2-33.5 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.9-26.9 
+        26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-.7-14.9-4.1-29.7-14.9-41.4 
+        -10.8-12.5-25.1-21.3-41.4-22-29.2-1.9-116.7-1.9-145.9 0-14.9.7-29.7 4.1-41.4 14.9-12.5 10.8-21.3 25.1-22 
+        41.4-1.9 29.2-1.9 116.7 0 145.9.7 14.9 4.1 29.7 14.9 41.4 10.8 12.5 25.1 21.3 41.4 22 29.2 1.9 116.7 
+        1.9 145.9 0 14.9-.7 29.7-4.1 41.4-14.9 12.5-10.8 21.3-25.1 22-41.4 1.9-29.2 1.9-116.6 0-145.9z"/>
+      </svg>
+    </a>
+  </div>  <footer>
+    NAHJUL HUDA DARS – Reserved all thoughts
+  </footer>  <div class="popup" id="popup">Welcome to Nahjul Huda Dars!</div>  <script>
+    const popup = document.getElementById('popup');
+    document.addEventListener('mousemove', (e) => {
+      popup.style.left = e.pageX + 15 + 'px';
+      popup.style.top = e.pageY + 15 + 'px';
+      popup.style.transform = 'scale(1)';
+    });
+    document.addEventListener('mouseout', () => {
+      popup.style.transform = 'scale(0)';
+    });
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('welcome-popup').style.display = 'none';
+      }, 3000);
+    });
+  </script></body>
+</html>
