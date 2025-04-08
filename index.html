@@ -7,7 +7,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, rgba(0, 245, 224, 0.24), #01757e, #09D1C7, #46DFB1, #80EE98);
+      background: linear-gradient(135deg, rgb(54, 255, 178), #40f2ff, #54c9ff, #6f96ff, #7e80ff);
       color: white;
       overflow-x: hidden;
     }#welcome-popup {
@@ -23,6 +23,17 @@
   z-index: 9999;
   animation: fadeIn 2s;
 }
+header {
+      text-align: center;
+      text-size-adjust: 70px;
+      text-shadow: black;
+      padding: 2rem 1rem;
+      animation: fadeInDown 2s ease-in-out;
+    }
+
+    header h1 {
+      color: black; /* Set the color of the heading to black */
+    }
 
 header {
   text-align: center;
@@ -77,23 +88,33 @@ header {
   font-size: 0.9rem;
 }
 
-.instagram-link {
-  text-align: center;
-  margin-top: 2rem;
-}
+ /* Social Media Links */
+ .social-links {
+      text-align: center;
+      margin-top: 2rem;
+    }
 
-.instagram-link svg {
-  width: 50px;
-  height: 50px;
-  fill: rgb(255, 0, 212);
-  transition: transform 0.5s ease, fill 0.5s ease;
-  animation: bounce 2s infinite;
-}
+    .social-links a {
+      margin: 0 1rem;
+      transition: transform 0.3s ease;
+    }
 
-.instagram-link svg:hover {
-  transform: scale(1.2);
-  fill: #ffbb00,;
-}
+    .social-links a:hover {
+      transform: scale(1.2);
+    }
+
+    .social-links svg {
+      width: 40px;
+      height: 40px;
+      fill: white;
+      transition: transform 0.5s ease, fill 0.5s ease;
+      animation: bounce 2s infinite;
+    }
+
+    .social-links svg:hover {
+      transform: scale(1.3);
+      fill: #ffbb00;
+    }
 
 footer {
   text-align: center;
@@ -144,14 +165,14 @@ footer {
   </style>
 </head>
 <body>
-  <div id="welcome-popup">WELCOME TO NAHJUL HUDA DARS</div>  <header>
+    <header>
     <img src="lopgo web.jpg" alt="Logo" class="logo">
     <h1>NAHJUL HUDA DARS, ATTUR</h1>
   </header>  <section class="description">
     <h2>About Us</h2>
     <p>
-      Nahjul Huda Dars is a dedicated Islamic institution focused on spreading the teachings of the Quran and Sunnah.
-      Our mission is to inspire hearts with wisdom, educate minds with knowledge, and build a community rooted in faith and unity.
+      Nahjul Huda Dars is a dedicated Islamic institution focused on spreading
+       the messages and teachings of the Quran and Sunnah through the paths of Samastha Kerala Jem-iyyathul Ulama. Our mission is to inspire hearts with wisdom and educate minds with moral values, and build a perfect person and community rooted in faith and unity
     </p>
   </section>  <section class="gallery">
     
@@ -208,35 +229,25 @@ footer {
       <img src="IMG_20250405_165806.JPG" alt="first year examination">
       <p>Students who achieved high success in the 2024-25 Quarterly Examination 1st Place: Hijaz C,2nd Place:Shamil 3rd Place:Afnan.A.</p>
     </div>
-  </section>  <div class="instagram-link">
-    <a href="https://www.instagram.com/nahjul_huda_dars_attur?igsh=YjV2ZDRlbTI1djV2this" target="_blank" aria-label="Instagram">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-
-        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 
-        114.9-51.3 114.9-114.9S287.6 141 224.1 141zm0 189.6c-41.2 0-74.7-33.5-74.7-74.7 
-        0-41.2 33.5-74.7 74.7-74.7 41.2 0 74.7 33.5 74.7 74.7 0 41.2-33.5 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.9-26.9 
-        26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-.7-14.9-4.1-29.7-14.9-41.4 
-        -10.8-12.5-25.1-21.3-41.4-22-29.2-1.9-116.7-1.9-145.9 0-14.9.7-29.7 4.1-41.4 14.9-12.5 10.8-21.3 25.1-22 
-        41.4-1.9 29.2-1.9 116.7 0 145.9.7 14.9 4.1 29.7 14.9 41.4 10.8 12.5 25.1 21.3 41.4 22 29.2 1.9 116.7 
-        1.9 145.9 0 14.9-.7 29.7-4.1 41.4-14.9 12.5-10.8 21.3-25.1 22-41.4 1.9-29.2 1.9-116.6 0-145.9z"/>
+  </section> 
+  <div class="social-links">
+    <!-- Instagram Link -->
+    <a href="https://www.instagram.com/nahjul_huda_dars_attur?igsh=MXY1cXJocWtsYm94aQ==" target="_blank" aria-label="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" viewBox="0 0 448 512">
+        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8z"/>
       </svg>
     </a>
-  </div>  <footer>
+
+    <!-- Facebook Link -->
+    <a href="https://www.facebook.com/your_facebook" target="_blank" aria-label="Facebook">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path d="M279.14 288l14.22-92H185v-60c0-26.34 12.7-52 56.57-52h43.4v-87.35a618.57 618.57 0 0 0-61.33-3.08c-74.15 0-123.12 45.51-123.12 124.06v63.97h-82.9v92h82.9v221h102.4V288z"/>
+      </svg>
+    </a>
+  </div>
+    <footer>
     NAHJUL HUDA DARS – Reserved all thoughts
-  </footer>  <div class="popup" id="popup">Welcome to Nahjul Huda Dars!</div>  <script>
-    const popup = document.getElementById('popup');
-    document.addEventListener('mousemove', (e) => {
-      popup.style.left = e.pageX + 15 + 'px';
-      popup.style.top = e.pageY + 15 + 'px';
-      popup.style.transform = 'scale(1)';
-    });
-    document.addEventListener('mouseout', () => {
-      popup.style.transform = 'scale(0)';
-    });
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        document.getElementById('welcome-popup').style.display = 'none';
-      }, 3000);
-    });
+  </footer>  
+   
   </script></body>
 </html>
