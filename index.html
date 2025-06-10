@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="file_00000000a1f461f8937f3c6ee8d78b43.png" type="png">
+  <link rel="icon" href="file_00000000a1f461f8937f3c6ee8d78b43.png" type="image/png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NAHJUL HUDA DARS</title>
@@ -34,7 +34,7 @@
       margin: 2rem auto;
       padding: 1rem;
       background: rgb(255, 255, 255);
-      border-radius: 30px;
+      border-radius: 35px;
       animation: fadeIn 3s ease-in-out;
     }
 
@@ -42,53 +42,66 @@
       max-width: 1200px;
       margin: 4rem auto;
       padding: 15px;
-      background: rgba(0, 0, 0, 0.151);
+      background: rgba(0, 0, 0, 0.062);
       border: 2px solid rgb(255, 255, 255);
-      border-radius: 25px;
-      box-shadow: 0 0 90px rgb(89, 0, 255);
+      border-radius: 30px;
+      box-shadow: 0 0 90px rgb(25, 0, 255);
       opacity: 0;
+      animation-timing-function: ease;
       transform: translateY(20px);
       transition: opacity 1s ease-out, transform 1s ease-out;
     }
 
     .gallery-box.visible {
-      opacity: 10000;
+      opacity: 1;
       transform: translateY(0);
     }
 
     .gallery {
-        display: grid;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   animation: zoomIn 2s ease-in-out;
+}
 
-    }
+.gallery-item {
+  text-align: center;
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
 
-    .gallery-item {
-      background: rgb(255, 255, 255);
-      border-radius: 18px;
-      text-align: center;
-      padding: 1rem;
-      transition: transform 0.3s ease;
-    }
-    .gallery-item img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(76, 0, 255, 0.863);
-    }
-    .gallery-item p {
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-    }
+.gallery-item:hover {
+  transform: scale(1.05);
+}
 
-    .social-links {
+.gallery-item img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(76, 0, 255, 0.89);
+}
+
+.gallery-item p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+ /* Social Media Links */
+ .social-links {
       text-align: center;
       margin-top: 2rem;
     }
+
     .social-links a {
       margin: 0 1rem;
       transition: transform 0.3s ease;
     }
+
+    .social-links a:hover {
+      transform: scale(1.2);
+    }
+
     .social-links svg {
       width: 40px;
       height: 40px;
@@ -96,19 +109,33 @@
       transition: transform 0.5s ease, fill 0.5s ease;
       animation: bounce 2s infinite;
     }
+
     .social-links svg:hover {
       transform: scale(1.3);
-      fill: #4c00ff;
+      fill: #3700ff;
     }
 
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: rgb(255, 255, 255);
-      font-size: 1rem;
-      margin-top: 2rem;
-      animation: fadeInUp 2s ease-in-out;
-    }
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.popup {
+  position: absolute;
+  pointer-events: none;
+  background: rgba(0,0,0,0.7);
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  transform: scale(0);
+  transition: transform 0.2s ease;
+}
+
 
     @keyframes fadeInDown {
       from { opacity: 0; transform: translateY(-50px); }
@@ -247,4 +274,4 @@
     observer.observe(galleryBox);
   </script>
 </body>
-</html>
+</html>v
