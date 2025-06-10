@@ -54,10 +54,6 @@
       opacity: 1;
       transform: translateY(0);
     }
-    .visible {
-      
-      <body onload="document.getElementById('galleryBox').classList.add('visible')">
-    }
 
     .gallery {
   display: grid;
@@ -275,5 +271,33 @@ footer {
     }, { threshold: 0.3 });
     observer.observe(galleryBox);
   </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const galleryBox = document.getElementById('galleryBox');
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+      observer.observe(galleryBox);
+    } else {
+      // fallback
+      galleryBox.classList.add('visible');
+    }
+
+    // extra scroll fallback
+    window.addEventListener('scroll', () => {
+      const rect = galleryBox.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom >= 0) {
+        galleryBox.classList.add('visible');
+      }
+    });
+  });
+</script>
 </body>
 </html>
